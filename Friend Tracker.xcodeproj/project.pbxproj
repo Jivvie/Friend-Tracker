@@ -1,0 +1,252 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A49BE9251CFBA73A0078BFF3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A49BE9241CFBA73A0078BFF3 /* main.cpp */; };
+		A49BE92D1CFBA9A80078BFF3 /* Friends.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A49BE92C1CFBA9A80078BFF3 /* Friends.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A49BE91F1CFBA73A0078BFF3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A49BE9211CFBA73A0078BFF3 /* Friend Tracker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Friend Tracker"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A49BE9241CFBA73A0078BFF3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A49BE92B1CFBA8020078BFF3 /* Friends.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Friends.h; sourceTree = "<group>"; };
+		A49BE92C1CFBA9A80078BFF3 /* Friends.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = Friends.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A49BE91E1CFBA73A0078BFF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A49BE9181CFBA73A0078BFF3 = {
+			isa = PBXGroup;
+			children = (
+				A49BE9231CFBA73A0078BFF3 /* Friend Tracker */,
+				A49BE9221CFBA73A0078BFF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A49BE9221CFBA73A0078BFF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A49BE9211CFBA73A0078BFF3 /* Friend Tracker */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A49BE9231CFBA73A0078BFF3 /* Friend Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				A49BE9241CFBA73A0078BFF3 /* main.cpp */,
+				A49BE92B1CFBA8020078BFF3 /* Friends.h */,
+				A49BE92C1CFBA9A80078BFF3 /* Friends.cpp */,
+			);
+			path = "Friend Tracker";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A49BE9201CFBA73A0078BFF3 /* Friend Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A49BE9281CFBA73A0078BFF3 /* Build configuration list for PBXNativeTarget "Friend Tracker" */;
+			buildPhases = (
+				A49BE91D1CFBA73A0078BFF3 /* Sources */,
+				A49BE91E1CFBA73A0078BFF3 /* Frameworks */,
+				A49BE91F1CFBA73A0078BFF3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Friend Tracker";
+			productName = "Friend Tracker";
+			productReference = A49BE9211CFBA73A0078BFF3 /* Friend Tracker */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A49BE9191CFBA73A0078BFF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Mitnov;
+				TargetAttributes = {
+					A49BE9201CFBA73A0078BFF3 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A49BE91C1CFBA73A0078BFF3 /* Build configuration list for PBXProject "Friend Tracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A49BE9181CFBA73A0078BFF3;
+			productRefGroup = A49BE9221CFBA73A0078BFF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A49BE9201CFBA73A0078BFF3 /* Friend Tracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A49BE91D1CFBA73A0078BFF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49BE9251CFBA73A0078BFF3 /* main.cpp in Sources */,
+				A49BE92D1CFBA9A80078BFF3 /* Friends.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A49BE9261CFBA73A0078BFF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A49BE9271CFBA73A0078BFF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A49BE9291CFBA73A0078BFF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A49BE92A1CFBA73A0078BFF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A49BE91C1CFBA73A0078BFF3 /* Build configuration list for PBXProject "Friend Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A49BE9261CFBA73A0078BFF3 /* Debug */,
+				A49BE9271CFBA73A0078BFF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A49BE9281CFBA73A0078BFF3 /* Build configuration list for PBXNativeTarget "Friend Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A49BE9291CFBA73A0078BFF3 /* Debug */,
+				A49BE92A1CFBA73A0078BFF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A49BE9191CFBA73A0078BFF3 /* Project object */;
+}
