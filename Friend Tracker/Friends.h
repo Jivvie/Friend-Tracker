@@ -15,6 +15,7 @@ using namespace std;
 class Friends
 {
 private:
+    map<string, int> friendList;
     
 public:
     Friends(int);

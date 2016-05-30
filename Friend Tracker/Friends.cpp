@@ -16,8 +16,7 @@ using namespace std;
 Friends :: Friends(int u_numOfFriends)
 {
     numOfFriends = u_numOfFriends - 1;
-    map<string, int> friendList;
-    
+    enterInformation(friendList);
 }
 
 void Friends:: changeLastTalked(map<string, int> &list)
