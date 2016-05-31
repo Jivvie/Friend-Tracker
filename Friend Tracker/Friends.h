@@ -22,10 +22,10 @@ public:
     int numOfFriends;
     
     //methods
-    void changeFriendDays(map<string, int>);
-    void print(map<string, int>);
-    void enterInformation(std::map<string, int> &list);
-    void changeLastTalked(map<string, int> &list);
+    void enterInformation(std::map<string, int> &);
+    void changeLastTalked(map<string, int> &);
+    void addFriendsToList(map<string, int> &);
+    void printFriendList(map<string, int> &);
 };
 
 #endif /* Friends_h */

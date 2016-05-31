@@ -19,6 +19,24 @@ Friends :: Friends(int u_numOfFriends)
     enterInformation(friendList);
 }
 
+/**
+ Allows user to add new friends to the map
+ **/
+void Friends::addFriendsToList(map<string, int> &friendList)
+{
+    
+    string name;
+    int last_time_talked;
+    cout << "Enter friend's name to add" << endl;
+    cin >> name;
+    cout << "Enter the number of days since you spoke to your friend" << endl;
+    cin >> last_time_talked;
+    friendList[name] = last_time_talked;
+}
+
+/**
+ Allows user to change the Friends data for the number of days last spoken.
+ **/
 void Friends:: changeLastTalked(map<string, int> &list)
 {
     string name;
@@ -32,9 +50,15 @@ void Friends:: changeLastTalked(map<string, int> &list)
     cout << "New value: " << list[name] << endl;
 }
 
-void Friends :: enterInformation(std::map<string, int> &list)
+/**
+ Function that is called via the default constructor.
+ Function allows user to enter the names of their friends as well as
+ the values for the number of days that has passed sinced they have talked.
+ **/
+void Friends :: enterInformation(std::map<string, int> &fList)
 {
-    bool answer = true;
+    // This parameter is defaulted to true
+    bool wantsToEdit = true;
     //name of friend
     string name;
     //number of days since the user talked to this friend
@@ -57,25 +81,46 @@ void Friends :: enterInformation(std::map<string, int> &list)
             daysSinceTalked = 0;
         }
         // add friend to list
-        list[name] = daysSinceTalked;
+        fList[name] = daysSinceTalked;
     }
-    while(answer)
+    //while true, user must want to edit friends or would like to add friends.
+    while(wantsToEdit)
     {
         //variable for user input.
         int num;
-        cout << "Would you like to edit any friends? Enter 1 if yes. " << endl;
+        cout << "Would you like to edit any friends? Enter 1 if yes. Enter 2 if you would like to add friends. " << endl;
         cin >> num;
-        //if user doues not enter the value 1, the loop will stop and the program will terminate.
-        if(num != 1)
+        //if user doues not enter the value 1, the loop will stop
+        if (num == 0) {
+            wantsToEdit = false;
+        }
+        else if(num > 2)
         {
             //set answer to false. The loop will stop.
-            answer = false;
-            cout << "Closing....";
+            wantsToEdit = false;
+        }
+        else if (num == 2)
+        {
+            addFriendsToList(fList);
         }
         else{
             //allow user to edit friends.
-            changeLastTalked(list);
+            changeLastTalked(fList);
         }
         
+    }
+    printFriendList(fList);
+}
+
+/**
+ Function that uses an interator to iterate through the map, printing out keys and their values.
+ User will see their friends as well as the number of days last spoken to that friend.
+ **/
+void Friends::printFriendList(map<string, int> &fList)
+{
+    for( map<string, int>::iterator itr = fList.begin(), end =fList.end(); itr != end; ++itr)
+    {
+        cout << endl;
+        cout << "Name: " << itr -> first << endl << "Days last talked to him/her: " << itr -> second << endl;
     }
 }
